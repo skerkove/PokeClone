@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    
+    /* border: 1px dotted red; */
+}
+
+:host ::ng-deep .grass,:host ::ng-deep .path, :host ::ng-deep.grass2,:host ::ng-deep.water, :host ::ng-deep.empty{
+    width: 40px;
+    height: 40px;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+:host ::ng-deep .grass{
+    background-image:url('../../assets/imgs/grass.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+:host ::ng-deep .water{
+    background-image:url('../../assets/imgs/water.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+:host ::ng-deep .path{
+    background-image:url("../../assets/imgs/path.png");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+:host ::ng-deep .building{
+    background-image:url("../../assets/imgs/building.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    
+   
+}
+
+:host ::ng-deep body{
+    background-color: white;  
+    margin: 0
+}
+:host ::ng-deep #trainer{
+    background:url('../../assets/imgs/right1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+:host ::ng-deep .row{
+    height: 40px;
+}
+:host ::ng-deep .grass2{
+    background:url("../../assets/imgs/moss.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;  
+}
+#container{
+    background-color: rgba(88, 146, 97, 0.541);
+    padding-left: 15px;
+    width: 99.5%;
+    overflow: hidden;
+    height: 720px;
+}
+
+
+
+
+            /* ANIMATIONS */
+:host ::ng-deep .flashit{
+    background-color:rgb(252, 5, 5);
+      -webkit-animation: flash linear .25s infinite;
+      animation: flash linear .25s infinite;
+    }
+    @-webkit-keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    @keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+
+
+
+

@@ -1,0 +1,203 @@
+*{  
+    text-transform: capitalize ;
+    box-sizing: border-box;
+    /* border: 1px dotted red; */
+}
+main{
+    padding-top: 50px;
+    background-color: black;
+    text-align: center;
+    height: 700px;
+}
+.wrapper{
+    box-shadow: chartreuse 5px 5px 2px;
+    background-image:radial-gradient(white, purple);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    text-align: left;
+    display: inline-block;
+    border: 10px solid silver;
+    border-radius: 5px;
+    padding: 5px;
+    width: 60%;
+}
+.info{
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    width: 62.5%;
+}
+.infobtm{
+    text-align: left;
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+}
+.pokepic, .pokepicbottom{
+    display: inline-block;
+
+}
+.pokepic img, .pokepicbottom img{
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 250px;
+width: 250px;
+}
+.attacks{
+    display: inline-block;
+    vertical-align: top;
+}
+.caption{
+    height: 50px;
+    border: 5px solid black;
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.top, .bottom{
+    border: 5px solid black;
+    padding-left: 5px;
+    
+}
+
+.caption p{
+    font-size: 22px;
+    margin: auto;
+    
+}
+.pokeball{
+    height: 50px;
+    animation: shimmy 1.5s 1;
+    animation-direction: reverse; 
+    position: absolute;
+    left: 65%;
+    top: 25%
+}
+
+@keyframes shimmy {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(-550px, 250px);
+    }
+  }
+.hidden{
+    display: none;
+    position: absolute;
+}
+.caught{
+    opacity: 00%;
+}
+
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.entrance{
+    animation: fromRight 2.5s 1;
+    animation-direction: reverse; 
+}
+@keyframes fromRight {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(500px, 0px);
+    }
+  }
+
+form{
+    display: inline-block;
+}
+
+
+/* All HTML5 progress enabled browsers */
+progress.health {
+
+	/* Turns off styling - not usually needed, but good to know. */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	/* gets rid of default border in Firefox and Opera. */
+	border: solid #cccccc 5px;
+	border-radius: 10px;
+	/* Dimensions */
+	width: 238px;
+	height: 20px;
+}
+
+/* Polyfill */
+progress.health[role]:after {
+	background-image: none; /* removes default background from polyfill */
+}
+
+/*
+ * Background of the progress bar background
+ */
+
+/* Firefox and Polyfill */
+progress.health {
+	background: #cccccc !important; /* !important only needed in polyfill */
+}
+
+/* Chrome */
+progress.health::-webkit-progress-bar {
+	background: #cccccc;
+}
+
+/*
+ * Background of the progress bar value
+ */
+
+/* Firefox */
+progress.health::-moz-progress-bar {
+	border-radius: 5px;
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+}
+
+/* Chrome */
+progress.health::-webkit-progress-value {
+	border-radius: 5px;
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(43,194,83)),
+		color-stop(1, rgb(84,240,84))
+	);
+	background-image: -webkit-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+}
+
+/* Polyfill */
+progress.health[aria-valuenow]:before {
+	border-radius: 5px;
+	background-image: -moz-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	background-image: -ms-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	background-image: -o-linear-gradient(
+		center bottom,
+		rgb(43,194,83) 37%,
+		rgb(84,240,84) 69%
+	);
+	
+}

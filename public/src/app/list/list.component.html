@@ -1,0 +1,23 @@
+<div class="header">
+<button [routerLink]="['/map']"><img src="../../assets//imgs/map.png" alt="map">
+<p>Map</p></button> 
+</div>
+<main>
+    <h1>Your Captured Pokemon</h1><br>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Number</th>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pokemon of allPokemon">
+                <td>{{ pokemon.number }}</td>
+                <td>{{ pokemon.name }}</td>
+                <td><img src={{pokemon.image}} alt="sf"></td>
+            </tr><br>
+        </tbody>
+    </table>
+</main>

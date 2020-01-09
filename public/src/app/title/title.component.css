@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+    /* border: 1px dotted red; */
+}
+
+.body{
+    padding-top: 50px;
+    background-image: url('./my-assets/imgs/wallpaper.png');
+    height: 720px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+#header{
+    text-align: center;
+    height: 300px;
+}
+button{
+    display: inline-block;
+}
+
+main{
+    font-size: 20px;
+    text-transform: capitalize ;
+    text-align: center;
+    height: 20%;
+    
+}
+#menu{
+    display: inline-block;
+    background-image: linear-gradient(to right,  rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.822), rgba(255, 255, 255, 0));
+    /* border: 2px solid black; */
+    text-align: center;
+  
+}
+#nodemon{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.show{
+    display: contents;
+}
+.wordFlash{
+    color:#000000;
+      -webkit-animation: flash linear 1s infinite;
+      animation: flash linear 1s infinite;
+    }
+    @-webkit-keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+    @keyframes flash {
+        0% { opacity: 1; } 
+        50% { opacity: .1; } 
+        100% { opacity: 1; }
+    }
+.stopWordFlash{
+height: 225px;
+width: 400px;
+
+}
+
+
+
+.pulseit{
+	-webkit-animation: pulse linear 1s 1;
+	animation: pulse linear 1s 1;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; height: 100px;} 
+	50% { width:340px; height: 170px;} 
+	100% { width:500px; height: 250px;}
+}
+@keyframes pulse {
+	0% {  width:200px; height: 100px; } 
+	50% { width:340px; height: 170px; } 
+	100% {  width:500px; height: 250px; }
+}
+.pulseend{
+    width:500px;
+    height: 250px;
+}

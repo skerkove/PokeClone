@@ -1,0 +1,56 @@
+<main>
+    <div class="wrapper">
+        <div class="top">
+            <div class="info">
+                <h2>Name: {{wildPokemon.species.name}}</h2>
+                <p style="font-size: 20px;">Health: {{updateEnemyHealth}} / {{wildPokemon.stats[5].base_stat}}</p>
+                <progress class="health" value="{{updateEnemyHealth}}" max=" {{wildPokemon.stats[5].base_stat}}"></progress>
+            </div>
+            <div class="pokepic">
+                <img id="toppic" class="entrance" src="{{wildPokemon.sprites.front_default}}" alt="">
+            </div>
+        </div>
+        <div><img id="pokeball" class="hidden" src="../../assets/imgs/pokeball.webp" width="50px" height="50px"
+                alt="pokeball"></div>
+
+
+        <div class="caption">
+            <p>{{message}}</p>
+        </div>
+
+
+        <div class="bottom">
+            <div class="pokepicbottom">
+                <img id="btmpic" src="{{pokemon.sprites.back_default}}" alt="">
+            </div>
+            <div class="infobtm">
+                <h2>Name: {{pokemon.species.name}}</h2>
+                <p style="font-size: 20px;">Health: {{updateHeroHealth}} / {{pokemon.stats[5].base_stat}}</p>
+                <progress class="health" value={{updateHeroHealth}} max={{pokemon.stats[5].base_stat}}></progress><br>
+                <button (click)="heroAttacks()">Attacks!</button>
+                <button (click)="catchPokemon()">Throw PokeBall!</button>
+                <form (submit)="addPokemon()">
+                    <label class="hidden"> Number: </label>
+                    <input class="hidden" type="number" name="newPokemon.number" [(ngModel)]="newPokemon.number"><br>
+                    <label class="hidden"> Name: </label>
+                    <input class="hidden" type="text" name="newPokemon.name" [(ngModel)]="newPokemon.name"><br>
+                    <label class="hidden"> Image: </label>
+                    <input class="hidden" type="text" name="newPokemon.image" [(ngModel)]="newPokemon.image"><br>
+                    <input id="capture" class="hidden" type="submit" value="Capture Pokemon!">
+                </form>
+                <button [routerLink]="['/map']">Run Away!</button>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<!-- Audio options -->
+<audio id="audio1" src="../../assets/audio/pkmon1.mp3" type="audio/mpeg"></audio>
+<audio id="audio2" src="../../assets/audio/pkmon2.mp3" type="audio/mpeg"></audio>
+<audio id="audio3" src="../../assets/audio/pkmon3.mp3" type="audio/mpeg"></audio>
+<audio id="audio4" src="../../assets/audio/pkmon4.mp3" type="audio/mpeg"></audio>
+<audio id="audio5" src="../../assets/audio/pkmon5.mp3" type="audio/mpeg"></audio>
+<audio id="audio6" src="../../assets/audio/Blow1.ogg" type="audio/mpeg"></audio>
+<audio id="audio7" src="../../assets/audio/007Cry.wav" type="audio/mpeg"></audio>

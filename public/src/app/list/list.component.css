@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    text-transform: capitalize ;
+}
+main table{
+    color: black;
+    margin: auto;
+    width: 50%;
+    
+    
+}
+tr td{
+    vertical-align: middle;
+    color: black;
+}
+main{
+    padding-top: 10px;
+    text-align: center;
+    height: 670px;
+    background-image: linear-gradient(rgb(209, 106, 106), white);
+    overflow: auto;
+}
+.header{
+    padding-top: 2.5px;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    background-color: rgb(175, 155, 175) ;
+}
+.header img{
+    vertical-align: top;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+.header p{
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bolder;
+}
+button{
+    height: 44px;
+}
